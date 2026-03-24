@@ -1,0 +1,296 @@
+
+/* ===== DARK MODE ===== */
+
+html, body, #root {
+  height: 100%;
+}
+
+.dark .details-card {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark {
+  background: #121212;
+  color: #fff;
+}
+
+.dark .navbar {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+.dark .card {
+  background: #1e1e1e;
+}
+z
+.dark .login-card {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark input {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+.dark .filters button {
+  background: #2a2a2a;
+  color: white;
+}
+
+.dark .filters .active {
+  background: #4caf50;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar h3 {
+  margin: 0;
+}
+
+.navbar button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* LOGIN */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #e0e0e0;
+  cursor: pointer;
+}
+
+.filters .active {
+  background: #4caf50;
+  color: white;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h4 {
+  margin: 0 0 8px;
+}
+
+/* STATUS */
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status.done {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+
+
+/* THEME TOGGLE */
+.theme-toggle {
+  width: 50px;
+  height: 26px;
+  background: #ddd; 
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.theme-toggle.dark {
+  background: #4caf50;
+}
+
+.theme-circle {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+
+.theme-toggle.dark .theme-circle {
+  transform: translateX(24px);
+}
+
+
+/* TASK DETAILS CARD */
+.details-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.details-card h2 {
+  margin-bottom: 15px;
+}
+
+.details-card p {
+  margin: 10px 0;
+}
+
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  background: #f0f0f0;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+.dark .nav-links a:hover {
+  background: #333;
+}
+
+/* ===== PAGE CARD ===== */
+.page-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.dark .page-card {
+  background: #1e1e1e;
+  color: white;
+}
+
+/* ===== INPUT + BUTTON ===== */
+.page-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.page-card button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}
