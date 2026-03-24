@@ -12,7 +12,7 @@ function TaskCard({ task, onClick }: Props) {
       <h4>{task.title}</h4>
 
       <span className={`status ${task.completed ? 'done' : 'pending'}`}>
-        {task.completed ? 'Done' : 'Pending'}
+        {task.completed ? 'done' : 'Pending'}
       </span>
     </div>
   );

@@ -1,6 +1,6 @@
 import axiosInstance from '../../services/axiosInstance';
 import { retry } from '../../utils/retry';
-import type { Task } from './types';
+import type{ Task } from './types';
 
 export const fetchTasksAPI = async (): Promise<Task[]> => {
   return retry(async () => {

@@ -8,7 +8,7 @@ const Dashboard = lazy(() => import('../pages/Dashboard'));
 const TaskDetails = lazy(() => import('./../pages/taskDetails'));
 const Profile = lazy(() => import('../pages/Profile'));
 const Settings = lazy(() => import('../pages/Settings'));
-const CreateTask = lazy(() => import('../pages/CreateTask'));
+// const CreateTask = lazy(() => import('../pages/CreateTask'));
 const NotFound = lazy(() => import('../pages/NotFound'));
 
 //  Protected route
@@ -77,14 +77,6 @@ export default function AppRoutes() {
                         }
                     />
 
-                    <Route
-                        path="/create"
-                        element={
-                            <ProtectedRoute>
-                                <CreateTask />
-                            </ProtectedRoute>
-                        }
-                    />
 
                     <Route path="*" element={<NotFound />} />
 

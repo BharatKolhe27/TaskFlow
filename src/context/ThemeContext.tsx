@@ -22,9 +22,9 @@ return (
 );
 }
 // eslint-disable-next-line react-refresh/only-export-components
-export const useTheme = () => {
-  const ctx = useContext(ThemeContext);
-//   debugger;
-  if (!ctx) throw new Error('ThemeContext missing');
-  return ctx;
-};
+    export const useTheme = () => {
+    const ctx = useContext(ThemeContext);
+    //   debugger;
+    if (!ctx) throw new Error('ThemeContext missing');
+    return ctx;
+    };
